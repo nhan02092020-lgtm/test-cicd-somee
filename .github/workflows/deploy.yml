@@ -19,4 +19,8 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /www.daocongnhan.somee.com/
+          server-dir: /
+          dangerous-clean-slate: true
+          exclude: |
+            **/.git*
+            **/.git*/**
